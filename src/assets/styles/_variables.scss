@@ -1,0 +1,26 @@
+:root {
+	--font-family: 'Comfortaa', sans-serif;
+
+	/* Brand & Logo Colors from logo.jpg */
+  --nur-cyan: #00f2ff;       /* The bright "N" neon glow */
+  --logo-copper: #c58d71;    /* The metallic body of the "N" */
+  --logo-gold: #ffb347;      /* The warm lightbulb glow */
+
+  /* Backgrounds & Surfaces */
+  --bg-dark: #12171d;        /* Deep charcoal from logo background */
+  --bg-surface: #1a222c;     /* Lighter navy for menu tiles */
+  --white: #ffffff;
+
+  /* Game UI Accents from Lumina's Lab */
+  --ui-easy: #81e6d9;        /* Mint green for Easy levels */
+  --ui-medium: #f6ad55;      /* Orange for Medium levels */
+  --ui-hard: #f687b3;        /* Pink for Hard levels */
+  --ui-blue: #63b3ed;        /* Blue accent for buttons */
+  --ui-border-glow: #4fd1c5; /* The glowing outer frame */
+
+  /* Font Weights from your Comfortaa files */
+  --fw-regular: 400;         /* Comfortaa-Regular.ttf */
+  --fw-medium: 500;          /* Comfortaa-Medium.ttf */
+  --fw-semibold: 600;        /* Comfortaa-SemiBold.ttf */
+  --fw-bold: 700;            /* Comfortaa-Bold.ttf */
+}
