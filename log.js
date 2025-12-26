@@ -1,4 +1,4 @@
-import fs from 'fs';
+import fs from "fs";
 import https from "https";
 
 const main = async () => {

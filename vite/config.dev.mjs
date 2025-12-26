@@ -11,9 +11,9 @@ export default defineConfig({
         preprocessorOptions: {
             scss: {
                 // This automatically injects your variables into every component
-                additionalData: `@use "@/assets/styles/_variables.scss" as *;`
-            }
-        }
+                additionalData: `@use "@/assets/styles/_variables.scss" as *;`,
+            },
+        },
     },
     resolve: {
         alias: {

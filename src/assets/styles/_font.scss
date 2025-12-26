@@ -1,16 +1,16 @@
 $weights: (
-  "Regular": 400,
-  "Medium": 500,
-  "SemiBold": 600,
-  "Bold": 700
+    "Regular": 400,
+    "Medium": 500,
+    "SemiBold": 600,
+    "Bold": 700,
 );
 
 @each $name, $weight in $weights {
-  @font-face {
-    font-family: 'Comfortaa';
-    src: url('/assets/fonts/Comfortaa-#{$name}.woff2') format('woff2');
-    font-weight: $weight;
-    font-style: normal;
-    font-display: swap;
-  }
+    @font-face {
+        font-family: "Comfortaa";
+        src: url("/assets/fonts/Comfortaa-#{$name}.woff2") format("woff2");
+        font-weight: $weight;
+        font-style: normal;
+        font-display: swap;
+    }
 }
