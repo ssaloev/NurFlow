@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from "vue";
 import { EventBus } from "@/game/EventBus";
-import StartGame from "@/game/main";
+import StartGame from "@/game/index";
 import Phaser from "phaser";
 
 // Save the current scene instance

@@ -49,13 +49,13 @@ We have provided a default project structure to get you started. This is as foll
 | ---------------------- | ------------------------------------------------------------------------------------------------- |
 | `index.html`           | A basic HTML page to contain the game.                                                            |
 | `src`                  | Contains the Vue source code.                                                                     |
-| `src/main.ts`          | The main **Vue** entry point. This bootstraps the Vue application.                                |
+| `src/index.ts`         | The main **Vue** entry point. This bootstraps the Vue application.                                |
 | `src/vite-env.d.ts`    | Global TypeScript declarations, providing type information.                                       |
 | `src/App.vue`          | The main Vue component.                                                                           |
 | `src/PhaserGame.vue`   | The Vue component that initializes the Phaser Game and serves as a bridge between Vue and Phaser. |
 | `src/game/EventBus.ts` | A simple event bus to communicate between Vue and Phaser.                                         |
 | `src/game`             | Contains the game source code.                                                                    |
-| `src/game/main.ts`     | The main **game** entry point. This contains the game configuration and starts the game.          |
+| `src/game/index.ts`    | The main **game** entry point. This contains the game configuration and starts the game.          |
 | `src/game/scenes/`     | The Phaser Scenes are in this folder.                                                             |
 | `public/style.css`     | Some simple CSS rules to help with page layout.                                                   |
 | `public/assets`        | Contains the static assets used by the game.                                                      |
