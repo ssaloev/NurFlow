@@ -1,7 +1,12 @@
 <script setup lang="ts"></script>
 
 <template>
-    <div>
+    <div class="main-layout">
         <RouterView />
     </div>
 </template>
+<style>
+.main-layout {
+    overflow: hidden;
+}
+</style>
