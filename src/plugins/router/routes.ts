@@ -6,14 +6,17 @@ export const routes = [
     {
         path: "/",
         component: MainLayout,
+        name: "MainLayout",
         children: [
             {
                 path: "/",
                 component: IndexPage,
+                name: "IndexPage",
             },
             {
                 path: "/loading",
                 component: LoadingPage,
+                name: "LoadingPage",
             },
         ],
     },
