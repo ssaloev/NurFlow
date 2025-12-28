@@ -1,6 +1,6 @@
-import Aura from "@primeuix/themes/aura";
+import Material from "@primeuix/themes/material";
 import { definePreset } from "@primeuix/themes";
-const DefaultPreset = definePreset(Aura, {
+const DefaultPreset = definePreset(Material, {
     semantic: {
         primary: {
             50: "{amber.50}",

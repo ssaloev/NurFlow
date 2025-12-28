@@ -1,23 +1,19 @@
 <script setup lang="ts">
 import BaseLogo from "@/components/ui/logo/BaseLogo.vue";
+import { onMounted } from "vue";
+import { useGlobalStore } from "@/plugins/pinia/store/global";
+import { useRouter } from "vue-router";
 
-// import {useI18n} from "vue-i18n";
-//
-// useI18n();
-// import { onMounted } from "vue";
-// import { useGlobalStore } from "@/plugins/pinia/store/global";
-// import { useRouter } from "vue-router";
-//
-// const globalStore = useGlobalStore();
-// const router = useRouter();
-//
-// onMounted(() => {
-//     // @todo remove after adding real loading
-//     globalStore.setIsLoading(false);
-//     router.push({
-//         name: "IndexPage",
-//     });
-// });
+const globalStore = useGlobalStore();
+const router = useRouter();
+
+onMounted(() => {
+    // @todo remove after adding real loading
+    globalStore.setIsLoading(false);
+    router.push({
+        name: "IndexPage",
+    });
+});
 </script>
 <template>
     <div class="loader-overlay__wrapper">
@@ -35,6 +31,7 @@ import BaseLogo from "@/components/ui/logo/BaseLogo.vue";
 .loader-overlay {
     max-width: 400px;
     width: 100%;
+    padding: 20px;
 
     &__wrapper {
         position: fixed;
@@ -50,6 +47,7 @@ import BaseLogo from "@/components/ui/logo/BaseLogo.vue";
 
     &__logo {
         width: 100%;
+        margin-bottom: 20px;
     }
 
     &__progress-bar {

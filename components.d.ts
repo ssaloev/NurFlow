@@ -13,6 +13,7 @@ declare module 'vue' {
   export interface GlobalComponents {
     BaseLogo: typeof import('./src/components/ui/logo/BaseLogo.vue')['default']
     Button: typeof import('primevue/button')['default']
+    Image: typeof import('primevue/image')['default']
     PhaserGame: typeof import('./src/components/PhaserGame/PhaserGame.vue')['default']
     ProgressBar: typeof import('primevue/progressbar')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
