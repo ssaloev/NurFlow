@@ -1,0 +1,19 @@
+{
+    "typeList": [
+        {
+            "id": 1,
+            "name": "Learn",
+            "gridSize": 3
+        },
+        {
+            "id": 2,
+            "name": "Think",
+            "gridSize": 4
+        },
+        {
+            "id": 3,
+            "name": "Imagine",
+            "gridSize": 6
+        }
+    ]
+}
