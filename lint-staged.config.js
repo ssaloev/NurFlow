@@ -3,5 +3,8 @@
  * @type {import('lint-staged').Configuration}
  */
 export default {
-    "*": ["pnpm prettier:fix", "pnpm eslint:fix"],
+    "*.{js,ts,vue,jsx,tsx,css,scss,md,json,yml,yaml}": [
+        "prettier --write",
+        "eslint --fix",
+    ],
 };
