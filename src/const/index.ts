@@ -1,0 +1,1 @@
+export const BRAN_NAME = "Nur FLow";

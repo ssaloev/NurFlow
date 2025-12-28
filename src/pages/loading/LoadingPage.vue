@@ -1,4 +1,9 @@
 <script setup lang="ts">
+import BaseLogo from "@/components/ui/logo/BaseLogo.vue";
+
+// import {useI18n} from "vue-i18n";
+//
+// useI18n();
 // import { onMounted } from "vue";
 // import { useGlobalStore } from "@/plugins/pinia/store/global";
 // import { useRouter } from "vue-router";
@@ -15,8 +20,41 @@
 // });
 </script>
 <template>
-    <div>
-        <Button>test</Button>
+    <div class="loader-overlay__wrapper">
+        <div class="loader-overlay">
+            <BaseLogo class="loader-overlay__logo" />
+            <ProgressBar
+                class="loader-overlay__progress-bar"
+                mode="indeterminate"
+                :value="50"
+            ></ProgressBar>
+        </div>
     </div>
 </template>
-<style scoped></style>
+<style lang="scss">
+.loader-overlay {
+    max-width: 400px;
+    width: 100%;
+
+    &__wrapper {
+        position: fixed;
+        inset: 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+    }
+
+    &__logo {
+        width: 100%;
+    }
+
+    &__progress-bar {
+        width: 100%;
+        height: 20px;
+    }
+}
+</style>
