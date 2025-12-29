@@ -2,7 +2,7 @@
 import { type Props, LOGO_SIZE } from "./types.ts";
 import { computed } from "vue";
 import { BRAN_NAME } from "@/const";
-import LogoImage from "@/assets/images/logo.svg";
+import LogoImage from "@/assets/images/logo.svg?url";
 
 const props = withDefaults(defineProps<Props>(), {
     size: LOGO_SIZE.DEFAULT,

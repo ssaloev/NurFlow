@@ -1,6 +1,7 @@
-import IndexPage from "@/pages/index/IndexPage.vue";
-import LoadingPage from "@/pages/loading/LoadingPage.vue";
 import MainLayout from "@/layouts/main/MainLayout.vue";
+import IndexPage from "@/pages/index/IndexPage.vue";
+import DifficultiesPage from "@/pages/difficulties/DifficultiesPage.vue";
+import LoadingPage from "@/pages/loading/LoadingPage.vue";
 
 export const routes = [
     {
@@ -12,6 +13,11 @@ export const routes = [
                 path: "/",
                 component: IndexPage,
                 name: "IndexPage",
+            },
+            {
+                path: "/difficulties",
+                component: DifficultiesPage,
+                name: "DifficultiesPage",
             },
             {
                 path: "/loading",

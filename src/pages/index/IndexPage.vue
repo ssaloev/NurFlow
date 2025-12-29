@@ -1,5 +1,18 @@
 <script setup lang="ts">
-import BaseLogo from "../../components/ui/logo/BaseLogo.vue";
+import BaseLogo from "@/components/ui/logo/BaseLogo.vue";
+import { useRouter } from "vue-router";
+const router = useRouter();
+function goToTypes() {
+    router.push({
+        path: "/difficulties",
+    });
+}
+
+function goToAbout() {
+    router.push({
+        path: "/about",
+    });
+}
 </script>
 <template>
     <div class="index-page">
@@ -7,10 +20,13 @@ import BaseLogo from "../../components/ui/logo/BaseLogo.vue";
             <BaseLogo />
         </header>
         <main class="index-page__content">
-            <Button class="index-page__play">Play</Button>
+            <Button class="index-page__play" @click="goToTypes">Play</Button>
         </main>
         <footer class="index-page__about">
-            <Button class="index-page__about" severity="secondary"
+            <Button
+                class="index-page__about"
+                severity="secondary"
+                @click="goToAbout"
                 >About</Button
             >
         </footer>
