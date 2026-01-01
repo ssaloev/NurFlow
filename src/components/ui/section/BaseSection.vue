@@ -11,4 +11,10 @@ const props = defineProps<Props>();
     </section>
 </template>
 
-<style scoped lang="scss"></style>
+<style lang="scss">
+.base-section {
+    &__title {
+        margin-bottom: 40px;
+    }
+}
+</style>

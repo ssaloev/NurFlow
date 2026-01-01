@@ -3,17 +3,20 @@
         {
             "id": 1,
             "name": "Learn",
-            "gridSize": 3
+            "gridSize": 3,
+            "color": "#4DFFC9"
         },
         {
             "id": 2,
             "name": "Think",
-            "gridSize": 4
+            "gridSize": 4,
+            "color": "#FFB347"
         },
         {
             "id": 3,
             "name": "Imagine",
-            "gridSize": 6
+            "gridSize": 6,
+            "color": "#BF5FFF"
         }
     ]
 }
