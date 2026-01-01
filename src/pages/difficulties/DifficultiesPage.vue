@@ -19,7 +19,10 @@ const data = jsonData as Difficulties;
                     :style="`--color: ${item.color}`"
                 >
                     <DifficultyCard
-                        v-bind="item"
+                        :id="item.id"
+                        :name="item.name"
+                        :color="item.color"
+                        :gridSize="item.gridSize"
                         :disabled="item.name !== 'Learn'"
                     />
                 </li>
@@ -43,7 +46,6 @@ const data = jsonData as Difficulties;
         width: 100%;
         height: auto;
         aspect-ratio: 2/1;
-        display: flex;
         justify-content: center;
         align-items: center;
     }
