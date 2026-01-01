@@ -3,5 +3,8 @@
         "buttons": {
             "loading": "Loading"
         }
+    },
+    "difficulties": {
+        "title": "Difficulties"
     }
 }

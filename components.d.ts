@@ -11,8 +11,12 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    BaseHeader: typeof import('./src/components/ui/header/BaseHeader.vue')['default']
+    BaseLayout: typeof import('./src/components/ui/layout/BaseLayout.vue')['default']
     BaseLogo: typeof import('./src/components/ui/logo/BaseLogo.vue')['default']
+    BaseSection: typeof import('./src/components/ui/section/BaseSection.vue')['default']
     Button: typeof import('primevue/button')['default']
+    Header: typeof import('./src/components/ui/header/Header.vue')['default']
     Image: typeof import('primevue/image')['default']
     PhaserGame: typeof import('./src/components/PhaserGame/PhaserGame.vue')['default']
     ProgressBar: typeof import('primevue/progressbar')['default']

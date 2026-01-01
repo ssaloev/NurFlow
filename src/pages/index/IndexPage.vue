@@ -39,7 +39,7 @@ function goToAbout() {
     justify-content: center;
     height: 100vh;
 
-    max-width: 600px;
+    max-width: 400px;
     padding: 0 40px;
     margin: auto;
     gap: 20px;
