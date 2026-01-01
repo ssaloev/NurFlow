@@ -12,5 +12,7 @@ import BaseLogo from "../logo/BaseLogo.vue";
 .base-header {
     margin: 0;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 </style>
