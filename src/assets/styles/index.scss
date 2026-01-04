@@ -18,12 +18,9 @@ body {
     background-color: var(--p-surface-950);
     color: var(--p-stone-50);
     overflow: hidden;
+    line-height: 1.5;
 }
 
-body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-}
 img,
 picture,
 video,
