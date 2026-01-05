@@ -12,7 +12,7 @@ const cssClasses = computed(() => {
 </script>
 <template>
     <router-link
-        :to="`/difficulties/${props.id}/`"
+        :to="{ name: 'LevelsPage', params: { id: props.id } }"
         :style="`--color: ${props.color}`"
         :tabindex="props.disabled ? '-1' : '0'"
         :class="cssClasses"

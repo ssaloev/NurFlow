@@ -19,13 +19,11 @@ export const routes = [
                 path: "/difficulties",
                 component: DifficultiesPage,
                 name: "DifficultiesPage",
-                children: [
-                    {
-                        path: "/difficulties/:id",
-                        component: LevelsPage,
-                        name: "LevelsPage",
-                    },
-                ],
+            },
+            {
+                path: "/levels/:id",
+                component: LevelsPage,
+                name: "LevelsPage",
             },
             {
                 path: "/loading",
