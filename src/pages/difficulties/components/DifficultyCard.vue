@@ -14,6 +14,7 @@ const cssClasses = computed(() => {
     <router-link
         :to="`/difficulties/${props.id}/`"
         :style="`--color: ${props.color}`"
+        :tabindex="props.disabled ? '-1' : '0'"
         :class="cssClasses"
     >
         <h3 class="difficulty-card__title">{{ props.name }}</h3>
@@ -44,7 +45,10 @@ const cssClasses = computed(() => {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    transition: color 0.5s ease-in-out;
+    transition:
+        color 0.5s ease-in-out,
+        border 1.5s ease-in;
+    border: var(--border-width) solid transparent;
 
     &_disabled {
         opacity: 0.6;
@@ -56,6 +60,7 @@ const cssClasses = computed(() => {
     &:not(&_disabled):active {
         outline: none;
         color: var(--color);
+        border-color: var(--color);
 
         .difficulty-card-border-animation_top {
             transform: translateX(-100%);
