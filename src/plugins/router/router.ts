@@ -1,17 +1,17 @@
-import { createMemoryHistory, createRouter } from "vue-router";
+import { createWebHistory, createRouter } from "vue-router";
 import { routes } from "@/plugins/router/routes.ts";
 import { useGlobalStore } from "@/plugins/pinia/store/global";
 
 export const router = createRouter({
-    history: createMemoryHistory(),
+    history: createWebHistory(),
     routes,
 });
 
-router.beforeEach((to, from) => {
+router.beforeEach((to) => {
     const userStore = useGlobalStore();
     if (to.name === "LoadingPage" && !userStore.isLoading) {
         return {
-            name: from.name ?? "IndexPage",
+            name: to.name ?? "IndexPage",
         };
     }
     if (to.name !== "LoadingPage" && userStore.isLoading) {

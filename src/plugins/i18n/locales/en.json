@@ -6,5 +6,8 @@
     },
     "difficulties": {
         "title": "Difficulties"
+    },
+    "levels": {
+        "title": "Levels"
     }
 }
