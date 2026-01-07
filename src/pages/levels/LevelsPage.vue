@@ -28,12 +28,12 @@ onMounted(fetchData);
 
 <template>
     <BaseLayout :title="t('levels.title')" v-if="data">
-        <div class="difficulties-page">
-            <ul class="difficulties-page__list">
+        <div class="levels-page">
+            <ul class="levels-page__list">
                 <li
                     v-for="item in data"
                     :key="item.name"
-                    class="difficulties-page__item"
+                    class="levels-page__item"
                     :style="`--color: ${item.color}`"
                 >
                     <LevelsCard
@@ -49,6 +49,10 @@ onMounted(fetchData);
 </template>
 
 <style lang="scss">
-.levels {
+.levels-page {
+    &__list {
+        display: grid;
+        grid-template: repeat(3, 1fr) / auto;
+    }
 }
 </style>
